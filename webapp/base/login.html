@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <!-- 引入bootstrap核心css文件   -->
+    <link rel="stylesheet" href="../boot/css/bootstrap.min.css">
+    <!--  引入jQuery核心js文件  -->
+    <script src="../boot/js/jquery-3.5.1.min.js"></script>
+    <!--  引入bootstrap核心js文件  -->
+    <script src="../boot/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+<!--标题-->
+    <div class="row" style="margin-top: 75px;">
+        <div class="col-sm-6 col-lg-offset-3">
+            <h1>这是一个登录页面</h1>
+        </div>
+    </div>
+<!--登录表单-->
+    <div class="row">
+        <div class="col-sm-4 col-lg-offset-4">
+            <!--表单-->
+            <form>
+                <div class="form-group">
+                    <label for="name">用户名</label>
+                    <input type="email" class="form-control" id="name" placeholder="请输入用户名">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="请输入密码">
+                </div>
+                <button type="submit" class="btn btn-success">登录</button>
+                <button type="submit" class="btn info">忘记密码</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

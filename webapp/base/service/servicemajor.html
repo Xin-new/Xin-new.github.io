@@ -1,0 +1,192 @@
+
+
+<div class="container-fluid">
+    <!--栅格系统-->
+    <div class="row">
+        <div id="content">
+            <!--中心内容-->
+            <div>
+                <!--页头-->
+                <div class="page-header">
+                    <h1>来源信息</h1>
+                </div>
+                <!--标签页组件-->
+                <div>
+
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">来源信息表</a></li>
+                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="home">
+                            <!--处理人员信息表的面板-->
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                </div>
+                                <div>
+                                    <!--表格-->
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th>报警ID</th>
+                                            <th>报警来源</th>
+                                            <th>所属部门</th>
+                                            <th>所属设备</th>
+                                            <th>操作</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>001</td>
+                                            <td>Rammohan </td>
+                                            <td>Reddy</td>
+                                            <td>A+</td>
+                                            <td>
+                                                <button class="btn btn-info btn-xs" data-toggle="modal" data-target="#editA1Modal">修改</button>
+                                                <button class="btn btn-danger btn-xs">删除</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>002</td>
+                                            <td>Smita</td>
+                                            <td>Pallod</td>
+                                            <td>A</td>
+                                            <td>
+                                                <button class="btn btn-info btn-xs" data-toggle="modal" data-target="#editA1Modal">修改</button>
+                                                <button class="btn btn-danger btn-xs">删除</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>003</td>
+                                            <td>Rabindranath</td>
+                                            <td>Sen</td>
+                                            <td>A+</td>
+                                            <td>
+                                                <button class="btn btn-info btn-xs" data-toggle="modal" data-target="#editA1Modal">修改</button>
+                                                <button class="btn btn-danger btn-xs">删除</button>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <!--添加按钮-->
+                                    <ul class="list-group-item">
+                                        <li><button class="btn btn-success btn-xs" data-toggle="modal" data-target="#addA1Modal">添加</button></li>
+                                    </ul>
+                                    <!--分页组件-->
+                                    <div class="pull-right">
+                                        <nav aria-label="Page navigation">
+                                            <ul class="pagination">
+                                                <li class="disabled">
+                                                    <a href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="active"><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">4</a></li>
+                                                <li><a href="#">5</a></li>
+                                                <li>
+                                                    <a href="#" aria-label="Next">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--操作提示框-->
+                            <br><br><br>
+                            <div class="alert alert-success alert-dismissible" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <strong>操作成功!</strong> 天选之人！愿上帝永远保佑你。
+                            </div>
+                            <div class="alert alert-danger alert-dismissible" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <strong>操作失败!</strong> 由于某些不可抗力，操作失败了，这并不怪你。
+                            </div>
+
+                            <!--添加模态框-->
+                            <div class="modal fade" id="addA1Modal" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title">添加信息</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="baojingA11">报警ID</label>
+                                                    <input type="email" class="form-control" id="baojingA11" placeholder="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="baojingA12">报警来源</label>
+                                                    <input type="password" class="form-control" id="baojingA12" placeholder="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="baojingA13">所属部门</label>
+                                                    <input type="password" class="form-control" id="baojingA13" placeholder="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="baojingA14">所属设备</label>
+                                                    <input type="password" class="form-control" id="baojingA14" placeholder="">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" >添加</button>
+                                            <button type="button" class="btn btn-primary" data-dismiss="modal">取消</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--修改模态框-->
+                            <div class="modal fade" id="editA1Modal" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title">修改信息</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="editbaojingA11">报警ID</label>
+                                                    <input type="email" class="form-control" id="editbaojingA11" placeholder="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="editbaojingA12">报警来源</label>
+                                                    <input type="password" class="form-control" id="editbaojingA12" placeholder="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="editbaojingA13">所属部门</label>
+                                                    <input type="password" class="form-control" id="editbaojingA13" placeholder="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="editbaojingA14">所属设备</label>
+                                                    <input type="password" class="form-control" id="editbaojingA14" placeholder="">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" >修改</button>
+                                            <button type="button" class="btn btn-primary" data-dismiss="modal">取消</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane" id="settings">...</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
